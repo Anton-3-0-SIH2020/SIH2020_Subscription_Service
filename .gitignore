@@ -1,0 +1,5 @@
+secret.ini
+env/
+__pycache__/
+*.html
+*.pdf
