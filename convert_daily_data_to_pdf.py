@@ -26,7 +26,7 @@ def store_file_as_pdf(get_latest_ca):
 def store_file(filename, data, typ="pdf"):
     if typ == 'pdf':
         df = pd.DataFrame(data=data)
-        df.fillna('-')
+        df = df.fillna('-')
         directory = os.path.dirname(os.path.realpath(__file__))
         html_file_path = os.path.join("Daily Report.html")
         pdf_file_path = os.path.join(filename)
